@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+body{
+  background: #282c34;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -10,6 +12,10 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+  .nav-item{
+    display: block;
+    margin: auto;
   }
 }
 
@@ -27,6 +33,10 @@
 .App-link {
   color: #61dafb;
 }
+.nav_background{
+  background: rgba(0, 0, 0, 0.8);
+  
+}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +45,258 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.my_name{
+  font-size: 33px;
+  font-weight: bolder;
+}
+.first_name{
+  color: rgb(255, 0, 238);
+}
+.last_name{
+  color: blue;
+}
+.first_char{
+color: rgb(255, 0, 64);
+}
+.last_char{
+  color: rgb(0, 225, 255);
+  }
+.nav-link{
+  margin: 20px;
+}
+.nav-link:hover{
+position: relative;
+border-bottom:3px solid red ;
+border-color: red;
+}
+.active{
+border-bottom:3px solid red ;
+border-color: red;
+}
+/* .parent_page{
+  background: black;
+} */
+
+
+ /* home  page designing start from here */
+.page_start{
+  margin-top: 120px;
+  border: 1px solid black;
+  color: white;
+  border-radius: 30px;
+  box-shadow: 0 0 20px white;
+
+}
+ .hero_img{
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 20px green;
+
+ }
+ .about_content{
+  text-align: center;
+  color:white;
+ }
+
+ .page_start_about{
+  /* From https://css.glass */
+background: url('https://www.bing.com/th/id/OGC.c12691f52275baae27eb370dda08725e?pid=1.7&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fgFhZjOtzoutSvckWPM%2fgiphy.gif&ehk=aFjm8g%2f4bIsz0U7smFYx8PDX0N1Hf1tnZ0r7lbwUNCI%3d');
+border-radius: 16px;
+background-size: cover;
+background-position: center;
+box-shadow: 0 0 20px white;
+backdrop-filter: blur(17.9px);
+-webkit-backdrop-filter: blur(17.9px);
+border: 1px solid rgba(255, 255, 255, 0.81);
+ }
+ .page_start_about  .about_me{
+  color: white;
+  display: block;
+  text-align: center;
+  margin: auto;
+  border-bottom: 5px solid green;
+  width: 250px;
+  border-radius: 50px;
+}
+
+
+/* contact page designing start from here*/
+.page_start_contact{
+  text-align: center;
+  /* background: url('https://bestanimations.com/media/stars/506972325dissolving-star-gif.gif'); */
+  background: url('https://media.giphy.com/media/3o85xHpvtw7atu1SJa/giphy.gif');
+border-radius: 16px;
+background-size: cover;
+background-position: center;
+
+box-shadow: 0 0 20px white;
+backdrop-filter: blur(17.9px);
+-webkit-backdrop-filter: blur(17.9px);
+border: 1px solid rgba(255, 255, 255, 0.81);
+}
+.page_start_contact  .contact_me{
+  color: white;
+  display: block;
+  text-align: center;
+  margin: auto;
+  border-bottom: 5px solid green;
+  width: 250px;
+  border-radius: 50px;
+}
+.page_start_contact h1{
+  color: white;
+}
+.contact_form .inp{
+  width: 400px;
+  margin: 20px;
+  height: 40px;
+  background: rgba(112, 107, 107, 0.5);
+  box-shadow: 0 0 20px white;
+  color: white;
+  font-size: 25px;
+  border-radius: 30px;
+  border-bottom: 3px solid green;
+}
+.contact_form textarea{
+  width: 400px;
+  background: rgb(0, 4, 0,0.5);
+  color: white;
+}
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+.submit_btn{
+  width: 150px;
+  background: green;
+  height: 50px;
+  color: white;
+  font-size: 25px;
+  border-radius: 25px;
+  border: none;
+}
+.submit_btn:hover{
+  background: none;
+  border: 5px solid green;
+  border-radius: 20px;
+}
+
+.social_links_img{
+  width: 60px;
+  margin: 20px;
+}
+
+
+/* Education page designing start from here */
+
+.eduaction_details{
+  display: flex;
+  justify-content: center;
+  background: url('https://wallpaper-house.com/data/out/6/wallpaper2you_105577.gif');
+ background-size: 100%;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px green;
+}
+.eduaction_details img{
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+}
+
+.degree_name{
+  border-bottom: 3px solid green;
+  border-radius: 30px;
+  width: 150px;
+  text-align: center;
+}
+
+/* home page */
+.carousel-item img{
+width: 100%;
+height: 700px;
+border-radius: 30px;
+}
+
+
+
+/* Project Section start from here  */
+.page_start_project{
+  background: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');
+  background-size: cover;
+  background-position: center;
+}
+.one_to_one_project_details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projectbox{
+  text-align: center;
+  width: 250px;
+  
+  border: 1px solid white;
+  transition: 1s ease-in-out;
+  margin: 10px;
+
+}
+.projectbox img{
+  width: 248px;
+  height: 250px;
+  
+}
+
+
+.projectbox:hover{
+  scale: 1.1.9;
+  
+}
+.page_start_skills{
+  background: url('https://blog.hdwallsource.com/wp-content/uploads/2016/01/gif-41328-42318-hd-wallpapers.jpg.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+.pskill{
+  text-align: center;
+  display: block;
+  align-items: center;
+ 
+  /* justify-content: center;
+  flex-direction: column; */
+}
+progress::-webkit-progress-value {
+  border: 0;
+  height: 40px;
+  /* border-radius: 20px; */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(1, 247, 1);
+}
+progress::-moz-progress-bar {
+  border: 0;
+  height: 40px;
+  /* border-radius: 20px; */
+}
+.Progressbar{
+  width: 60vw;
+  height: 30px;
+  border-radius: 50px;
+}
+.skill_name{
+  width: 300px;
+}
+.skillss{
+  display: flex;
+  justify-content: center;
+  background: none;
+  margin: 20px;
 }
