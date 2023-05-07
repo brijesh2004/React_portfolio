@@ -105,7 +105,8 @@ border-color: red;
 
  .page_start_about{
   /* From https://css.glass */
-background: url('https://www.bing.com/th/id/OGC.c12691f52275baae27eb370dda08725e?pid=1.7&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fgFhZjOtzoutSvckWPM%2fgiphy.gif&ehk=aFjm8g%2f4bIsz0U7smFYx8PDX0N1Hf1tnZ0r7lbwUNCI%3d');
+/* background: url('https://www.bing.com/th/id/OGC.c12691f52275baae27eb370dda08725e?pid=1.7&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fgFhZjOtzoutSvckWPM%2fgiphy.gif&ehk=aFjm8g%2f4bIsz0U7smFYx8PDX0N1Hf1tnZ0r7lbwUNCI%3d'); */
+background: rgb(0, 0, 0);
 border-radius: 16px;
 background-size: cover;
 background-position: center;
@@ -128,8 +129,7 @@ border: 1px solid rgba(255, 255, 255, 0.81);
 /* contact page designing start from here*/
 .page_start_contact{
   text-align: center;
-  /* background: url('https://bestanimations.com/media/stars/506972325dissolving-star-gif.gif'); */
-  background: url('https://media.giphy.com/media/3o85xHpvtw7atu1SJa/giphy.gif');
+  background: rgb(18, 17, 0);
 border-radius: 16px;
 background-size: cover;
 background-position: center;
@@ -197,7 +197,8 @@ border: 1px solid rgba(255, 255, 255, 0.81);
 .eduaction_details{
   display: flex;
   justify-content: center;
-  background: url('https://wallpaper-house.com/data/out/6/wallpaper2you_105577.gif');
+  /* background: url('https://wallpaper-house.com/data/out/6/wallpaper2you_105577.gif'); */
+  background: rgb(0, 49, 67);
  background-size: 100%;
   align-items: center;
   margin: 20px;
@@ -229,7 +230,7 @@ border-radius: 30px;
 
 /* Project Section start from here  */
 .page_start_project{
-  background: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');
+ background: rgb(5, 24, 0);
   background-size: cover;
   background-position: center;
 }
@@ -245,7 +246,7 @@ border-radius: 30px;
   
   border: 1px solid white;
   transition: 1s ease-in-out;
-  margin: 10px;
+  margin: 25px;
 
 }
 .projectbox img{
@@ -260,7 +261,8 @@ border-radius: 30px;
   
 }
 .page_start_skills{
-  background: url('https://blog.hdwallsource.com/wp-content/uploads/2016/01/gif-41328-42318-hd-wallpapers.jpg.gif');
+  /* background: url('https://blog.hdwallsource.com/wp-content/uploads/2016/01/gif-41328-42318-hd-wallpapers.jpg.gif'); */
+  background: rgb(0, 0, 0);
   background-size: cover;
   background-position: center;
 }

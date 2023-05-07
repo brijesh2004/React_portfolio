@@ -1,4 +1,8 @@
-import React,{useEffect} from 'react'
+import React,{useEffect} from 'react';
+import instagram from '../images/instagram.png';
+import Facebook from '../images/Facebook.png';
+import github from '../images/github.png';
+import linkedIn from '../images/linkedIn.png';
 
 const Contact = () => {
   useEffect(()=>{
@@ -19,10 +23,10 @@ const Contact = () => {
     <h1>Connect with me</h1>
      <div>
     
-    <a href="https://www.instagram.com/brijeshsingh5744/" rel='noreferrer' target={"_blank"}> <img src="https://clipart.info/images/ccovers/1516920567instagram-png-logo-transparent.png" alt="" className='social_links_img' /></a>
-    <a href="https://www.linkedin.com/in/brijesh-singh-456185228/" rel='noreferrer' target={"_blank"}> <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG8.png" alt="" className="social_links_img" /></a>
-    <a href="https://www.facebook.com/profile.php?id=100087485439951" rel='noreferrer' target={"_blank"}> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_(2019).svg/1200px-Facebook_f_logo_(2019).svg.png" alt="" className="social_links_img" /></a>
-    <a href="https://github.com/brijesh2004" rel='noreferrer' target={"_blank"}> <img src="https://th.bing.com/th/id/R.c963626c145ea660ba7ceee666789c0a?rik=Ui79F6V0E%2bmFYw&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f2016%2f04%2fGithub-PNG-Image.png&ehk=SFNlTltedev2eggRq1KzxVrr35NixG8ITlAbFT%2bVMoY%3d&risl=&pid=ImgRaw&r=0" alt="" className="social_links_img" /></a>
+    <a href="https://www.instagram.com/brijeshsingh5744/" rel='noreferrer' target={"_blank"}> <img src={instagram} alt="" className='social_links_img' /></a>
+    <a href="https://www.linkedin.com/in/brijesh-singh-456185228/" rel='noreferrer' target={"_blank"}> <img src={linkedIn} alt="" className="social_links_img" /></a>
+    <a href="https://www.facebook.com/profile.php?id=100087485439951" rel='noreferrer' target={"_blank"}> <img src={Facebook} alt="" className="social_links_img" /></a>
+    <a href="https://github.com/brijesh2004" rel='noreferrer' target={"_blank"}> <img src={github} alt="" className="social_links_img" /></a>
    
   </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Skillbox from './Skillbox';
+import SkillCircle from './SkillCircle';
 const Skills = () => {
   useEffect(() => {
     document.title = "Brijes Singh (Skills)";
@@ -8,18 +8,19 @@ const Skills = () => {
     <>
       <div className='page_start container page_start_skills'>
         <div className='pskill'>
-        <Skillbox SkillName="HTML" value='80' color="red"/>
-        <Skillbox SkillName="CSS" value='75'/>
-        <Skillbox SkillName="JAVASCRIPT" value='50'/>
-        <Skillbox SkillName="BOOTSTAP" value='70'/>
-        <Skillbox SkillName="RACT JS" value='55'/>
-        <Skillbox SkillName="NODE JS" value='35'/>
-        <Skillbox SkillName="EXPRESS JS" value='40'/>
-        <Skillbox SkillName="MONGODB" value='30'/>
-        <Skillbox SkillName="C LANGUAGE" value='50'/>
-        <Skillbox SkillName="C++" value='55'/>
-        <Skillbox SkillName="JAVA" value='20'/>
-        <Skillbox SkillName="PYTHON" value='40'/>
+        <SkillCircle val="80" title="HTML"/>
+        <SkillCircle val="70" title="CSS"/>
+        <SkillCircle val="55" title="JAVASCRIPT"/>
+        <SkillCircle val="70" title="BOOTSTRAP"/>
+        <SkillCircle val="50" title="REACTJS"/>
+        <SkillCircle val="50" title="NODEJS"/>
+        <SkillCircle val="50" title="EXPRESSJS"/>
+        <SkillCircle val="40" title="MONGODB"/>
+        <SkillCircle val="70" title="C LANGUAGE"/>
+        <SkillCircle val="75" title="C++"/>
+        <SkillCircle val="30" title="PYTHON"/>
+        <SkillCircle val="20" title="JAVA"/>
+        <SkillCircle val="70" title="CSS"/>
         </div>
       </div>
     </>
