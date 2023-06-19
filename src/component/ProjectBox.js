@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProjectBox = (props) => {
   return (
@@ -7,7 +8,7 @@ const ProjectBox = (props) => {
         <img src={props.src} alt="" />
         <h3>{props.title}</h3>
         <p>{props.about}</p>
-        <a href={props.hred}><button className='submit_btn'>See Live</button></a>
+        <Link to={props.href} target='_blank'><button className='submit_btn'>See Live</button></Link>
       </div>
     </>
   )

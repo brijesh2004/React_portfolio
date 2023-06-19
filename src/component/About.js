@@ -1,6 +1,9 @@
 import React,{useEffect} from 'react';
+import Typed from 'react-typed';
 import hero from '../images/hero.jpg';
 const About = () => {
+    // typing text animation script
+
   useEffect(()=>{
     document.title ="Brijes Singh";
   },[])
@@ -10,9 +13,16 @@ const About = () => {
       <h1 className='about_me'>About Me</h1>
         <img src={hero} alt="brijesh_pic" className='hero_img' />
         <div className='about_content'>
-        <h1>Hi I Am Brijesh Singh</h1>
+        <h2>Brijesh Singh</h2>
+        <h1>Hi I Am  <Typed
+        className="typing"
+        strings={['Brijesh Singh ','C and C++ Programmer', 'MERN Developer', 'Competitive Coder', 'Problem Solver']}
+        typeSpeed={100}
+        backSpeed={60}
+        loop={true}
+      /></h1>
          <p> A MERN Developer</p>
-         
+        
          <p> I Am Pursuing My B-Tech Degree From Madan Mohan Malviya University Of Technology Gorakhpur Uttar Pradesh(2025)</p>
 
         <p>  I Am A Quick Learner ,Coding Enthusiast And Also A Competative Programmer Doing Competative Programming In CPP .</p>

@@ -3,6 +3,7 @@
 }
 body{
   background: #282c34;
+  cursor: url('../src/images/cursor.png') , auto;
 }
 .App-logo {
   height: 40vmin;
@@ -68,12 +69,11 @@ color: rgb(255, 0, 64);
 }
 .nav-link:hover{
 position: relative;
-border-bottom:3px solid red ;
-border-color: red;
+/* border-color: red; */
 }
 .active{
-border-bottom:3px solid red ;
-border-color: red;
+border-bottom:3px solid green;
+/* border-color: red; */
 }
 /* .parent_page{
   background: black;
@@ -87,6 +87,7 @@ border-color: red;
   color: white;
   border-radius: 30px;
   box-shadow: 0 0 20px white;
+  margin-bottom: 30px;
 
 }
  .hero_img{
@@ -106,18 +107,22 @@ border-color: red;
  .page_start_about{
   /* From https://css.glass */
 /* background: url('https://www.bing.com/th/id/OGC.c12691f52275baae27eb370dda08725e?pid=1.7&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fgFhZjOtzoutSvckWPM%2fgiphy.gif&ehk=aFjm8g%2f4bIsz0U7smFYx8PDX0N1Hf1tnZ0r7lbwUNCI%3d'); */
-background: rgb(0, 0, 0);
+background-size: cover;
 border-radius: 16px;
+/* background-color: #000724; */
+background: linear-gradient(90deg,rgb(16, 0, 16) , rgb(0, 0, 43));
 background-size: cover;
 background-position: center;
 box-shadow: 0 0 20px white;
 backdrop-filter: blur(17.9px);
+margin-bottom: 30px;
 -webkit-backdrop-filter: blur(17.9px);
 border: 1px solid rgba(255, 255, 255, 0.81);
  }
  .page_start_about  .about_me{
   color: white;
   display: block;
+  
   text-align: center;
   margin: auto;
   border-bottom: 5px solid green;
@@ -145,7 +150,7 @@ border: 1px solid rgba(255, 255, 255, 0.81);
   text-align: center;
   margin: auto;
   border-bottom: 5px solid green;
-  width: 250px;
+  width: fit-content;
   border-radius: 50px;
 }
 .page_start_contact h1{
@@ -205,6 +210,7 @@ border: 1px solid rgba(255, 255, 255, 0.81);
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: 0 0 10px green;
+  margin-bottom: 30px;
 }
 .eduaction_details img{
   width: 150px;
@@ -265,6 +271,7 @@ border-radius: 30px;
   background: rgb(0, 0, 0);
   background-size: cover;
   background-position: center;
+  margin-bottom: 30px;
 }
 
 .pskill{
@@ -301,4 +308,45 @@ progress::-moz-progress-bar {
   justify-content: center;
   background: none;
   margin: 20px;
+}
+
+.typing{
+  color: rgb(255, 0, 255);
+}
+
+
+.coding_profile_box{
+   box-shadow: 0 0 10px rgb(237, 237, 237);
+   transition: 1s;
+}
+.coding_profile_box button{
+  width: 80px;
+  height: 35px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: white;
+  box-shadow: 0 0 9px;
+  border-radius: 20px;
+  background: linear-gradient(90deg , rgb(49, 49, 152), rgb(101, 167, 101), rgb(133, 93, 133));
+}
+
+.coding_profile_box:hover{
+  scale: 1.1;
+}
+
+.coding_profile_button:hover{
+  background: rgb(0, 255, 0);
+  color: #282c34;
+}
+.coding_profile_box img{
+  transition: 1s;
+}
+
+.coding_profile_box img:hover{
+  scale: 1.2;
+}
+
+
+.percentage_value :hover{
+   scale: 1.2;
 }

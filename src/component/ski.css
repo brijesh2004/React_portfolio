@@ -10,7 +10,7 @@
   } */
   
   div[role="progressbar"] {
-    --size: 12rem;
+    --size: 8rem;
     --fg: #369;
     --bg: #def;
     --pgPercentage: var(--value);
@@ -33,11 +33,16 @@
     counter-reset: percentage var(--value);
     content: counter(percentage) '%';
   }
+  div[role="progressbar"]:hover {
+    scale: 1.1;
+  }
+  
   
   /* demo */
   .skillscircularbar{
     margin: 30px;
     display: flex;
+    
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -46,4 +51,20 @@
   .pskill{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .programming_profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .programming_profile div{
+    margin: 20px;
+    border: 1px solid ;
+  }
+  .programming_profile img{
+    width: 100px;
+    height: 100px;
   }

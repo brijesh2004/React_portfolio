@@ -7,19 +7,22 @@ import Education from './component/Education';
 import Contact from './component/Contact';
 import Project from './component/Project';
 import { BrowserRouter as Router,Routes, Route} from 'react-router-dom';
+import EorrorPage from './component/EorrorPage';
 
 function App() {
   return (
 <>
 <div className='parent_page'>
-<Navbar/>
+
 <Router>
+<Navbar/>
     <Routes>
           <Route exact path='/' element={<About/>}></Route>
           <Route exact path='/about' element={<Skills/>}></Route>
           <Route exact path='/education' element={<Education/>}></Route>
           <Route exact path='/project' element={<Project/>}></Route>
           <Route exact path='/contact' element={<Contact/>}></Route>
+          <Route exact path='*' element={<EorrorPage/>}></Route>
    </Routes>
    </Router>
    </div>
