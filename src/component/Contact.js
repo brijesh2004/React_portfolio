@@ -17,7 +17,7 @@ const Contact = () => {
 
    const storeTheMessage = async (e) =>{
     e.preventDefault();
-    const res = await fetch('http://localhost:8000/addmessage',{
+    const res = await fetch('https://portfoliobackend-59j6.onrender.com/addmessage',{
       method:'POST',
       headers:{
         "Content-Type" : "application/json"
