@@ -14,9 +14,11 @@ const Contact = () => {
    const [name , setName] = useState("");
    const [email , setEmail] = useState("");
    const [message , setMessage] = useState("");
+   const [submit , setSubmit] = useState("Submit");
 
    const storeTheMessage = async (e) =>{
     e.preventDefault();
+    setSubmit("Submiting...");
     const res = await fetch('https://portfoliobackend-59j6.onrender.com/addmessage',{
       method:'POST',
       headers:{
@@ -26,6 +28,7 @@ const Contact = () => {
         name ,email, message 
       })
     })
+    setSubmit("Submit");
     const data = await res.json();
     if(res.status===401|| res.status===500){
       window.alert("Message Not Added");
