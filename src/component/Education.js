@@ -9,6 +9,7 @@ const Education = () => {
   return (
     <>
     <div className='page_start container '>
+    <h1 className='about_me'>Education</h1>
          <div className='eduaction_details'>
           <div><p className='degree_name'>High School</p> 
           <p>From Aadarsh Inter College Hardi Chack Gorakhpur</p>

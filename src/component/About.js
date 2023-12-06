@@ -1,6 +1,11 @@
 import React,{useEffect} from 'react';
 import Typed from 'react-typed';
 import hero from '../images/hero.jpg';
+import Skills from './Skills';
+
+
+
+
 const About = () => {
     // typing text animation script
 
@@ -33,6 +38,8 @@ const About = () => {
        <p>Overall, I believe my extensive skills and experience in programming, dedication to continuous learning, and collaborative nature make me a valuable asset to any team or project that requires high-quality programming work</p>
         </div>
       </div>
+      <h1 className='about_me'>Skills</h1>
+      <Skills/>
     </>
   )
 }

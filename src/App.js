@@ -5,9 +5,11 @@ import Skills from './component/Skills';
 import About from './component/About';
 import Education from './component/Education';
 import Contact from './component/Contact';
+
 import Project from './component/Project';
 import { BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 import EorrorPage from './component/EorrorPage';
+import Nav from './component/Nav';
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
 <div className='parent_page'>
 
 <Router>
-<Navbar/>
+{/* <Navbar/> */}
+<Nav/>
     <Routes>
           <Route exact path='/' element={<About/>}></Route>
           <Route exact path='/about' element={<Skills/>}></Route>

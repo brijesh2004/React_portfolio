@@ -2,12 +2,26 @@
   text-align: center;
 }
 body{
-  background: #282c34;
-  cursor: url('../src/images/cursor.png') , auto;
+  background: black;
 }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -84,13 +98,11 @@ border-bottom:3px solid green;
 
  /* home  page designing start from here */
 .page_start{
-  margin-top: 120px;
-  border: 1px solid black;
+  margin-top: 20px;
+  /* border: 1px solid black; */
   color: white;
-  border-radius: 30px;
-  box-shadow: 0 0 20px white;
-  margin-bottom: 30px;
-
+  /* border-radius: 30px; */
+  /* box-shadow: 0 0 20px white; */
 }
  .hero_img{
   width: 250px;
@@ -104,6 +116,7 @@ border-bottom:3px solid green;
  .about_content{
   text-align: center;
   color:white;
+  
  }
 
  .page_start_about{
@@ -112,14 +125,14 @@ border-bottom:3px solid green;
 background-size: cover;
 border-radius: 16px;
 /* background-color: #000724; */
-background: linear-gradient(90deg,rgb(57, 56, 57) , rgb(35, 35, 53));
+background: black;
 background-size: cover;
 background-position: center;
-box-shadow: 0 0 20px white;
+/* box-shadow: 0 0 20px white; */
 backdrop-filter: blur(17.9px);
 margin-bottom: 30px;
 -webkit-backdrop-filter: blur(17.9px);
-border: 1px solid rgba(255, 255, 255, 0.81);
+/* border: 1px solid rgba(255, 255, 255, 0.81); */
 
  }
  
@@ -135,11 +148,22 @@ border: 1px solid rgba(255, 255, 255, 0.81);
   border-radius: 50px;
 }
 
+.about_me{
+  color: white;
+  display: block;
+  
+  text-align: center;
+  margin: auto;
+  border-bottom: 5px solid green;
+  width: 250px;
+  border-radius: 50px;
+}
+
 
 /* contact page designing start from here*/
 .page_start_contact{
   text-align: center;
-  background: rgb(18, 17, 0);
+  background: black;
 border-radius: 16px;
 background-size: cover;
 background-position: center;
@@ -250,7 +274,7 @@ border-radius: 30px;
 
 /* Project Section start from here  */
 .page_start_project{
- background: rgb(5, 24, 0);
+ background: black;
   background-size: cover;
   background-position: center;
 }
@@ -288,33 +312,30 @@ border-radius: 30px;
   margin-bottom: 30px;
 }
 
-.pskill{
+/* .pskill{
   text-align: center;
   display: block;
   align-items: center;
- 
-  /* justify-content: center;
-  flex-direction: column; */
-}
-progress::-webkit-progress-value {
+} */
+/* progress::-webkit-progress-value {
   border: 0;
   height: 40px;
-  /* border-radius: 20px; */
+  
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: rgb(1, 247, 1);
-}
-progress::-moz-progress-bar {
+} */
+/* progress::-moz-progress-bar {
   border: 0;
   height: 40px;
-  /* border-radius: 20px; */
-}
-.Progressbar{
+  
+} */
+/* .Progressbar{
   width: 60vw;
   height: 30px;
   border-radius: 50px;
-}
-.skill_name{
+} */
+/* .skill_name{
   width: 300px;
 }
 .skillss{
@@ -322,7 +343,12 @@ progress::-moz-progress-bar {
   justify-content: center;
   background: none;
   margin: 20px;
-}
+} */
+
+
+
+
+
 
 .typing{
   color: rgb(255, 0, 255);
@@ -332,6 +358,7 @@ progress::-moz-progress-bar {
 .coding_profile_box{
    box-shadow: 0 0 10px rgb(237, 237, 237);
    transition: 1s;
+   margin: 30px;
 }
 .coding_profile_box button{
   width: 80px;
@@ -364,7 +391,16 @@ progress::-moz-progress-bar {
 .percentage_value :hover{
    scale: 1.2;
    
-}
 
+}
+.programming_profile{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.coding_profile_box a img{
+  width: 90px;
+  height: 90px;
+}
 
 

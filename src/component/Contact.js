@@ -63,29 +63,29 @@ const Contact = () => {
     <h1 className='contact_me'>Coding Profiles</h1>
    <div className="programming_profile">
    <div className='coding_profile_box'>
-   <a href="hr"><img src={hackerrank} alt="hackerrank" /> </a>
+   <a href="/contact"><img src={hackerrank} alt="hackerrank" /> </a>
    <p>HackerRank</p>
-   <Link to="anf"><button className='coding_profile_button'>Visit</button></Link>
+   <Link to="https://www.hackerrank.com/profile/brskumar0102"><button className='coding_profile_button'>Visit</button></Link>
    </div>
    <div className='coding_profile_box'>
-   <a href="hr"><img src={codechef} alt="codechef" /> </a>
+   <a href="/contact"><img src={codechef} alt="codechef" /> </a>
    <p>CodeChef</p>
-   <Link to="anf"><button className='coding_profile_button'>Visit</button></Link>
+   <Link to="https://www.codechef.com/users/brijesh_122004"><button className='coding_profile_button'>Visit</button></Link>
    </div>
    <div className='coding_profile_box'>
-   <a href="hr"><img src={leetcode} alt="leetcode" /> </a>
+   <a href="/contact"><img src={leetcode} alt="leetcode" /> </a>
    <p>Leetcode</p>
-   <Link to="anf"><button className='coding_profile_button'>Visit</button></Link>
+   <Link to="https://leetcode.com/brijesh_2004/"><button className='coding_profile_button'>Visit</button></Link>
    </div>
    <div className='coding_profile_box'>
-   <a href="hr"><img src={gfg} alt="gfg" /> </a>
+   <a href="/contact"><img src={gfg} alt="gfg" /> </a>
    <p>Geeksforgeek</p>
-   <Link to="anf"><button className='coding_profile_button'>Visit</button></Link>
+   <Link to="https://auth.geeksforgeeks.org/user/brskumar0102"><button className='coding_profile_button'>Visit</button></Link>
    </div>
    <div className='coding_profile_box'>
-   <a href="hr"><img src={coding_ninjas} alt="coding_ninjas" /> </a>
+   <a href="/contact"><img src={coding_ninjas} alt="coding_ninjas" /> </a>
    <p>Coding Ninjas</p>
-   <Link to="anf"><button className='coding_profile_button'>Visit</button></Link>
+   <Link to="https://www.codingninjas.com/studio/profile/Brijesh_94ec"><button className='coding_profile_button'>Visit</button></Link>
    </div>
    </div>
      

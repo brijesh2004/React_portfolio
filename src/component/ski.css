@@ -1,70 +1,50 @@
-/* @keyframes growProgressBar {
-    0%, 33% { --pgPercentage: 0; }
-    100% { --pgPercentage: var(--value); }
-  } */
-  
-  /* @property --pgPercentage {
-    syntax: '<number>';
-    inherits: false;
-    initial-value: 0;
-  } */
-  
-  div[role="progressbar"] {
-    --size: 8rem;
-    --fg: #369;
-    --bg: #def;
-    --pgPercentage: var(--value);
-    animation: growProgressBar 3s 1 forwards;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    background: 
-      radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
-      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
-      ;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: calc(var(--size) / 5);
-    color: var(--fg);
-  }
-  
-  div[role="progressbar"]::before {
-    counter-reset: percentage var(--value);
-    content: counter(percentage) '%';
-  }
-  div[role="progressbar"]:hover {
-    scale: 1.1;
-  }
-  
-  
-  /* demo */
-  .skillscircularbar{
-    margin: 30px;
+/* ski.css */
+.skills_page_Start {
     display: flex;
-    
-    text-align: center;
+    justify-content: center;
+  }
+  
+  .pskill {
+    width: 300px;
+  }
+  
+  .page_start_skills {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
+    height: 100vh;
   }
-
-  .pskill{
+  
+  .left-skills,
+  .right-skills {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-direction: column;  */
+    align-items: center; /* Align items at the center */
+  }
+  
+  .vertical_line {
+    width: 7px;
+    background-color: white;
+    height: 150px;
+  }
+  .horizontal_line{
+    width: 150px;
+    background-color: white;
+    height: 10px;
+  }
+  
+  .left-skills {
+    text-align: right;
+  }
+  
+  .right-skills {
+    text-align: left;
+  }
+  
+  .skillcircle{
+    margin-left: 50px;
   }
 
-
-  .programming_profile{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .programming_profile div{
-    margin: 20px;
-    border: 1px solid ;
-  }
-  .programming_profile img{
+  .skillimg{
     width: 100px;
-    height: 100px;
   }
