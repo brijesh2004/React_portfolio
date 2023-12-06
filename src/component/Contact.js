@@ -27,7 +27,7 @@ const Contact = () => {
       })
     })
     const data = await res.json();
-    if(res.status===401 || !data || res.status===500){
+    if(res.status===401|| res.status===500){
       window.alert("Message Not Added");
      }
      else{
