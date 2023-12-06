@@ -99,7 +99,7 @@ const Contact = () => {
       <input type="text" placeholder='Name' className='inp' name='name' onChange={handleInputs} value={name} autoComplete='off'/> <br />
       <input type="email"  placeholder='Email' className='inp' name='email' onChange={handleInputs} value={email} autoComplete='off'/> <br />
       <textarea name="message" id="" cols="30" rows="10" placeholder='message' onChange={handleInputs} value={message} autoComplete='off'></textarea> <br />
-      <input type="button" value="Submit" className='submit_btn' onClick={storeTheMessage}/>
+      <input type="button" value={submit} className='submit_btn' onClick={storeTheMessage}/>
      </form>
    <br /><br /><br /><br /><br />
 
