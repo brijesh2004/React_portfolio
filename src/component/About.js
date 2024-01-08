@@ -1,14 +1,11 @@
 import React,{useEffect} from 'react';
+
 import Typed from 'react-typed';
 import hero from '../images/hero.jpg';
 import Skills from './Skills';
 
 
-
-
 const About = () => {
-    // typing text animation script
-
   useEffect(()=>{
     document.title ="Brijes Singh";
   },[])
@@ -16,7 +13,9 @@ const About = () => {
     <>
       <div className='page_start page_start_about container'>
       <h1 className='about_me'>About Me</h1>
+       <div className='image_part_div'>
         <img src={hero} alt="brijesh_pic" className='hero_img' />
+      </div>
         <div className='about_content'>
         <h2>Brijesh Singh</h2>
         <h1>Hi I Am  <Typed

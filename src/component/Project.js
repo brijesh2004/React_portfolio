@@ -45,6 +45,20 @@ const Project = () => {
     <FadeInSection>
       <ProjectBox title="Search Room" src={roomrent} href="https://roomrenter.onrender.com/"  about="Search for rooms for rent in your city using this website. It's easy to find a room from anywhere, at any time."/>
 </FadeInSection>
+
+<FadeInSection>
+      <ProjectBox title="MMMUT Notes And Papers" href="https://imaginative-lebkuchen-087686.netlify.app/" about="Upload and Download the All semester papers and Notes that help the other Technology Used Nex.js"/>
+</FadeInSection>
+
+<FadeInSection>
+      <ProjectBox title="Restorent Management" href="https://restoclient.onrender.com" about="Order the food Online home delivery also available. Pay On Delivery Technology Used MERN Stack"/>
+</FadeInSection>
+
+<FadeInSection>
+      <ProjectBox title="Task Management" href="https://task-management-system-6ar7.onrender.com" about="Add the Task Delete the Task Update the Task change state of the task according to State of the Task"/>
+</FadeInSection>
+
+
 <FadeInSection>
       <ProjectBox title="Todo List" src={todolist} href="https://brijesh2004.github.io/TodoList/"  about="I have created a password-protected todo list using only HTML, CSS, and JavaScript. You can add items to the list with Your Password"/>
       </FadeInSection>

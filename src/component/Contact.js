@@ -29,7 +29,7 @@ const Contact = () => {
       })
     })
     setSubmit("Submit");
-    const data = await res.json();
+    // const data = await res.json();
     if(res.status===401|| res.status===500){
       window.alert("Message Not Added");
      }

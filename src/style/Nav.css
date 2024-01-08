@@ -7,6 +7,7 @@
     width: 100vw; /* Set width to 100% of the viewport width */
     background-color: green; /* Set background color to green */
     transition: 1s;
+    opacity: 0.8;
   }
   .nav_up {
     bottom: -90px;
