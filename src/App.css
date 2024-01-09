@@ -299,24 +299,18 @@ border-radius: 30px;
 
 .projectbox{
   text-align: center;
-  width: 250px;
-  
+  width: 320px;
   border: 1px solid white;
-  transition: 1s ease-in-out;
   margin: 25px;
 
 }
-.projectbox img{
-  width: 248px;
-  height: 250px;
-  
+
+@media screen and (max-width:340px) {
+  .projectbox{
+    width: 280px;
+  }
 }
 
-
-.projectbox:hover{
-  scale: 1.1.9;
-  
-}
 .page_start_skills{
   /* background: url('https://blog.hdwallsource.com/wp-content/uploads/2016/01/gif-41328-42318-hd-wallpapers.jpg.gif'); */
   background: rgb(0, 0, 0);
