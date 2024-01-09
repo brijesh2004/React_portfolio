@@ -12,6 +12,8 @@ import next from '../skillsimages/next_logo.png';
 import c from '../skillsimages/c.png';
 import cpp from '../skillsimages/cpp.png';
 import python from '../skillsimages/python.png';
+import typescript from '../skillsimages/typescript.png';
+import redux from '../skillsimages/redux.png';
 
 
 
@@ -157,6 +159,25 @@ const Skills = () => {
           <div className='horizontal_line'></div>
           <div className='skillcircle'>
           <img className='skillimg' src={next} alt="Next js" />
+          </div>
+        </div>
+        </FadeInSection>
+        <FadeInSection>
+        <div className='right-skills'>
+          <div className='vertical_line'></div>
+          <div className='horizontal_line'></div>
+          <div className='skillcircle'>
+          <img className='skillimg' src={typescript} alt="Next js" />
+          </div>
+        </div>
+        </FadeInSection>
+
+        <FadeInSection>
+        <div className='right-skills'>
+          <div className='vertical_line'></div>
+          <div className='horizontal_line'></div>
+          <div className='skillcircle'>
+          <img className='skillimg' src={redux} alt="Next js" />
           </div>
         </div>
         </FadeInSection>

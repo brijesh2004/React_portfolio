@@ -1,7 +1,8 @@
 import React,{useEffect} from 'react';
 
 import Typed from 'react-typed';
-import hero from '../images/hero.jpg';
+// import hero from '../images/hero.jpg';
+import hero1 from '../images/hero3.jpeg';
 import Skills from './Skills';
 
 
@@ -13,8 +14,10 @@ const About = () => {
     <>
       <div className='page_start page_start_about container'>
       <h1 className='about_me'>About Me</h1>
+
+      <div className='about_main'>
        <div className='image_part_div'>
-        <img src={hero} alt="brijesh_pic" className='hero_img' />
+        <img src={hero1} alt="brijesh_pic" className='hero_img' />
       </div>
         <div className='about_content'>
         <h2>Brijesh Singh</h2>
@@ -35,6 +38,7 @@ const About = () => {
        <p>My name is Brijesh Singh, and my skills include proficiency in HTML, CSS, JavaScript, Node.js, Express.js, React.js, MongoDB, C/C++, Python, and Java. I have completed over 400 questions on GeeksforGeeks, 100 questions on LeetCode, and 300+ coding challenges on Coding Ninjas.</p> 
        <p>I am passionate about programming and dedicated to continuous learning and staying up-to-date with the latest technologies. In addition to my technical abilities, I am also a strong communicator and collaborator, able to work effectively in teams and communicate ideas clearly and effectively.</p>
        <p>Overall, I believe my extensive skills and experience in programming, dedication to continuous learning, and collaborative nature make me a valuable asset to any team or project that requires high-quality programming work</p>
+        </div>
         </div>
       </div>
       <h1 className='about_me'>Skills</h1>

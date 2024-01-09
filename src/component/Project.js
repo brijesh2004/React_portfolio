@@ -64,15 +64,33 @@ const Project = () => {
                               <FadeInSection>
                                     <ProjectBox title="MERN Project" about="This is the Simple Website Made using the MERN it's content the Signup Login And send message and save it on the data base and also read the data from the data base " />
                               </FadeInSection>
+
                               <FadeInSection>
-                                    <ProjectBox title="Quote " href="https://brijesh2004.github.io/quote_in_english/" about="This is the Quote App you can read Unlimited number of the Quote This is made using HTML CSS And JAVASCRIPT and it use the API to fetch the data from the api" />
+                                    <ProjectBox title="Github Search Users" href1="https://github.com/brijesh2004/Search_github_user" href="https://search-github-username1.netlify.app/" about="Search the users on the github by there starting username and views there profile and repo and many more "  tech={["REACT", "CSS"]}/>
+                              </FadeInSection>
+
+                              <FadeInSection>
+                                    <ProjectBox title="Text utils" href1="https://github.com/brijesh2004/TextUtils" href="https://textutils-00qy.onrender.com" about="Remove the Extra space , Uppercase , lowercase , clear text copy text basic react app"  tech={["REACT", "CSS"]}/>
+                              </FadeInSection>
+                             
+                              <FadeInSection>
+                                    <ProjectBox title="Covid 19 Report" href1="https://github.com/brijesh2004/Covid19Data" href="https://covid19-data12.netlify.app/" about="Check the active case recovered case death state wise and overall updated date "  tech={["REACT", "CSS"]}/>
+                              </FadeInSection>
+
+                              <FadeInSection>
+                                    <ProjectBox title="E-commerce website" href1="https://github.com/brijesh2004/E-commerce-website" href="https://brijesh2004.github.io/E-commerce-website/" about="E-commerce webssite frontend only "  tech={["HTML", "CSS" ,"JAVASCRIPT"]}/>
+                              </FadeInSection>
+
+                              <FadeInSection>
+                                    <ProjectBox title="Quote" href1="https://github.com/brijesh2004/quote_in_english" href="https://brijesh2004.github.io/quote_in_english/" about="This is the Quote App you can read Unlimited number of the Quote This is made using HTML CSS And JAVASCRIPT and it use the API to fetch the data from the api" tech={["HTML", "CSS", "JAVASCRIPT"]}/>
                               </FadeInSection><FadeInSection>
-                                    <ProjectBox title="jokes" href="https://brijesh2004.github.io/jokes/" about="This is the Jokes App you can read Unlimited number of the Jokes This is made using HTML CSS And JAVASCRIPT and it use the API to fetch the data from the api" />
+                                    <ProjectBox title="jokes" href1="https://github.com/brijesh2004/jokes" href="https://brijesh2004.github.io/jokes/" about="This is the Jokes App you can read Unlimited number of the Jokes This is made using HTML CSS And JAVASCRIPT and it use the API to fetch the data from the api" tech={["HTML", "CSS", "JAVASCRIPT"]}/>
                               </FadeInSection>
                               <FadeInSection>
-                                    <ProjectBox title="Search Images Online" href="https://brijesh2004.github.io/SearchImage/" about="In this website you can search the online images with the category this is made using html css and javascript and the images search it from the unslaph" />
-                              </FadeInSection><FadeInSection>
-                                    <ProjectBox title="Kaun Banega KarorPati" href="https://brijesh2004.github.io/Play-KBC/" about="This is the Kaun Banega Karorpati Like q Quiz website this will not provide you any reward this is made only for as a mini project play this only for fun" />
+                                    <ProjectBox title="Search Images Online" href1="https://github.com/brijesh2004/SearchImage" href="https://brijesh2004.github.io/SearchImage/" about="In this website you can search the online images with the category this is made using html css and javascript and the images search it from the unslaph" tech={["HTML", "CSS", "JAVASCRIPT"]} />
+                              </FadeInSection>
+                              <FadeInSection>
+                                    <ProjectBox title="Kaun Banega KarorPati" href1="https://github.com/brijesh2004/Play-KBC" href="https://brijesh2004.github.io/Play-KBC/" about="This is the Kaun Banega Karorpati Like q Quiz website this will not provide you any reward this is made only for as a mini project play this only for fun"  tech={["HTML", "CSS", "JAVASCRIPT"]}/>
                               </FadeInSection>
                         </div>
 
