@@ -397,7 +397,9 @@ border-radius: 30px;
 .coding_profile_box:hover{
   scale: 1.1;
 }
-
+.coding_profile_button{
+  cursor: pointer;
+}
 .coding_profile_button:hover{
   background: rgb(0, 255, 0);
   color: #282c34;
