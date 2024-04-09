@@ -106,7 +106,7 @@ const Contact = () => {
     <h1>Connect with me</h1>
      <div>
     
-    <a href="https://www.instagram.com/brijesh01022004/" rel='noreferrer' target={"_blank"}> <img src={instagram} alt="" className='social_links_img' /></a>
+    <a href="https://www.instagram.com/brij_esh_singh/" rel='noreferrer' target={"_blank"}> <img src={instagram} alt="" className='social_links_img' /></a>
     <a href="https://www.linkedin.com/in/brijesh-singh-456185228/" rel='noreferrer' target={"_blank"}> <img src={linkedIn} alt="" className="social_links_img" /></a>
     <a href="https://www.facebook.com/profile.php?id=61556647203428" rel='noreferrer' target={"_blank"}> <img src={Facebook} alt="" className="social_links_img" /></a>
     <a href="https://github.com/brijesh2004" rel='noreferrer' target={"_blank"}> <img src={github} alt="" className="social_links_img" /></a>
