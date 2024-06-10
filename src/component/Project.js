@@ -1,101 +1,114 @@
-import React, { useEffect, useState, useRef } from 'react'
-import ProjectBox from './ProjectBox';
+import React, { useEffect, useState } from 'react'
 import '../../src/App.css';
+import './ski.css';
+import { Link } from 'react-router-dom';
 
-function FadeInSection(props) {
-      const [isVisible, setVisible] = useState(false);
-      const domRef = useRef();
-      useEffect(() => {
-            const observer = new IntersectionObserver(entries => {
-                  entries.forEach(entry => setVisible(entry.isIntersecting));
-            });
-            observer.observe(domRef.current);
-      }, []);
-      return (
-            <div
-                  className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
-                  ref={domRef}
-            >
-                  {props.children}
-            </div>
-      );
-}
 
 
 
 const Project = () => {
+      const [tech, setTech] = useState(0);
       useEffect(() => {
             document.title = "Brijes Singh (Project)";
       }, [])
       return (
             <>
-                  <div className='page_start container page_start_project'>
-                        <h1 style={{ textAlign: 'center' }} className='about_me'>Project</h1>
-                        <div className='one_to_one_project_details'>
-                              <FadeInSection>
-                                    <ProjectBox title="Search Room" href1="https://github.com/brijesh2004/roomrenderfrontend" href="https://roomrenter.onrender.com/" about="Search for rooms for rent in your city using this website. It's easy to find a room from anywhere, at any time." tech={["React", "NodeJS", "ExpressJS", "MongoDB", "CSS"]} />
-                              </FadeInSection>
-
-                              <FadeInSection>
-                                    <ProjectBox title="MMMUT Notes And Papers" href1="https://github.com/brijesh2004/next-js-app" href="https://imaginative-lebkuchen-087686.netlify.app/" about="Upload and Download the All semester papers and Notes that help the other Technology Used Next.js" tech={["Next.js", "MongoDB", "CSS"]} />
-                              </FadeInSection>
-
-                              <FadeInSection>
-                                    <ProjectBox title="Restorent Management" href1="https://github.com/brijesh2004/ResoManagemnetclient" href="https://restoclient.onrender.com" about="Order the food Online home delivery also available. Pay On Delivery Technology Used MERN Stack" tech={["React", "NodeJS", "ExpressJS", "MongoDB", "CSS"]} />
-                              </FadeInSection>
-
-                              <FadeInSection>
-                                    <ProjectBox title="Task Management" href1="https://github.com/brijesh2004/TaskManagementclient" href="https://task-management-system-6ar7.onrender.com" about="Add the Task Delete the Task Update the Task change state of the task according to State of the Task" tech={["React", "NodeJS", "ExpressJS", "MongoDB", "CSS"]} />
-                              </FadeInSection>
-
-
-                              <FadeInSection>
-                                    <ProjectBox title="Todo List" href1="https://github.com/brijesh2004/TodoList" href="https://brijesh2004.github.io/TodoList/" about="I have created a password-protected todo list using only HTML, CSS, and JavaScript. You can add items to the list with Your Password" tech={["HTML", "CSS", "JAVASCRIPT"]} />
-                              </FadeInSection>
-                              <FadeInSection>
-                                    <ProjectBox title="Resume Maker" href1="https://github.com/brijesh2004/ResumeMaker" href="https://brijesh2004.github.io/ResumeMaker/" about="You Can Make Resume With only Filling the Data . You Don't Need to Know the Any Software for This fill the details and download your Resume " tech={["HTML", "CSS", "JAVASCRIPT"]} />
-                              </FadeInSection>
-                              <FadeInSection>
-                                    <ProjectBox title="Weather App" href1="https://github.com/brijesh2004/WeatherappBackend" href="https://weatherapp-new.onrender.com/" about="This is the Weather App You Can Search the weather of the city that you want to know the weather condition of the city" tech={["HTML", "CSS", "JAVASCRIPT", "Nodejs" , "handelbars"]}/>
-                              </FadeInSection>
-                              <FadeInSection>
-                                    <ProjectBox title="Music App" href1="https://github.com/brijesh2004/MusicApp" href="https://brijesh2004.github.io/MusicApp/" about="This is the Simple Music App Made using the HTML CSS And JAVASCRIPT with the limited of the song" tech={["HTML", "CSS", "JAVASCRIPT"]}/>
-                              </FadeInSection>
-                              <FadeInSection>
-                                    <ProjectBox title="MERN Project" about="This is the Simple Website Made using the MERN it's content the Signup Login And send message and save it on the data base and also read the data from the data base " />
-                              </FadeInSection>
-
-                              <FadeInSection>
-                                    <ProjectBox title="Github Search Users" href1="https://github.com/brijesh2004/Search_github_user" href="https://search-github-username1.netlify.app/" about="Search the users on the github by there starting username and views there profile and repo and many more "  tech={["REACT", "CSS"]}/>
-                              </FadeInSection>
-
-                              <FadeInSection>
-                                    <ProjectBox title="Text utils" href1="https://github.com/brijesh2004/TextUtils" href="https://textutils-00qy.onrender.com" about="Remove the Extra space , Uppercase , lowercase , clear text copy text basic react app"  tech={["REACT", "CSS"]}/>
-                              </FadeInSection>
-                             
-                              <FadeInSection>
-                                    <ProjectBox title="Covid 19 Report" href1="https://github.com/brijesh2004/Covid19Data" href="https://covid19-data12.netlify.app/" about="Check the active case recovered case death state wise and overall updated date "  tech={["REACT", "CSS"]}/>
-                              </FadeInSection>
-
-                              <FadeInSection>
-                                    <ProjectBox title="E-commerce website" href1="https://github.com/brijesh2004/E-commerce-website" href="https://brijesh2004.github.io/E-commerce-website/" about="E-commerce webssite frontend only "  tech={["HTML", "CSS" ,"JAVASCRIPT"]}/>
-                              </FadeInSection>
-
-                              <FadeInSection>
-                                    <ProjectBox title="Quote" href1="https://github.com/brijesh2004/quote_in_english" href="https://brijesh2004.github.io/quote_in_english/" about="This is the Quote App you can read Unlimited number of the Quote This is made using HTML CSS And JAVASCRIPT and it use the API to fetch the data from the api" tech={["HTML", "CSS", "JAVASCRIPT"]}/>
-                              </FadeInSection><FadeInSection>
-                                    <ProjectBox title="jokes" href1="https://github.com/brijesh2004/jokes" href="https://brijesh2004.github.io/jokes/" about="This is the Jokes App you can read Unlimited number of the Jokes This is made using HTML CSS And JAVASCRIPT and it use the API to fetch the data from the api" tech={["HTML", "CSS", "JAVASCRIPT"]}/>
-                              </FadeInSection>
-                              <FadeInSection>
-                                    <ProjectBox title="Search Images Online" href1="https://github.com/brijesh2004/SearchImage" href="https://brijesh2004.github.io/SearchImage/" about="In this website you can search the online images with the category this is made using html css and javascript and the images search it from the unslaph" tech={["HTML", "CSS", "JAVASCRIPT"]} />
-                              </FadeInSection>
-                              <FadeInSection>
-                                    <ProjectBox title="Kaun Banega KarorPati" href1="https://github.com/brijesh2004/Play-KBC" href="https://brijesh2004.github.io/Play-KBC/" about="This is the Kaun Banega Karorpati Like q Quiz website this will not provide you any reward this is made only for as a mini project play this only for fun"  tech={["HTML", "CSS", "JAVASCRIPT"]}/>
-                              </FadeInSection>
-                        </div>
-
+                  <div className='skill_page'>
+                        <div onClick={() => setTech(0)} className={tech === 0 ? 'selected' : ''}>Full Stack</div>
+                        <div onClick={() => setTech(1)} className={tech === 1 ? 'selected' : ''}>Frontend</div>
+                        <div onClick={() => setTech(2)} className={tech === 2 ? 'selected' : ''}>Blockchain</div>
+                        <div onClick={() => setTech(3)} className={tech === 3 ? 'selected' : ''}>Machine Learning</div>
                   </div>
+
+                  {tech === 0 && 
+                  <div className='all_project'>
+                        <ProjectDetails title="Room Renter" details="Search for rooms for rent in your city using this website. It's easy to find a room from anywhere, at any time."
+                              code="https://github.com/brijesh2004/roomrenderfrontend"
+                              live="https://roomrenter.onrender.com"
+                        />
+                        <ProjectDetails title="MMMUT Notes And Papers" details="Upload and Download the All semester papers and Notes that help the other Technology Used Next.js"
+                              code="https://github.com/brijesh2004/next-js-app"
+                              live="https://mmmutmedia.netlify.app/"
+                        />
+                        <ProjectDetails title="Restorent Management" details="Order the food Online home delivery also available. Pay On Delivery Technology Used MERN Stack"
+                              code="https://github.com/brijesh2004/ResoManagemnetclient"
+                              live="https://restoclient.onrender.com"
+                        />
+                        <ProjectDetails title="Task Management" details="Add the Task Delete the Task Update the Task change state of the task according to State of the Task"
+                              code="https://github.com/brijesh2004/TaskManagementclient"
+                              live="https://task-management-system-6ar7.onrender.com"
+                        />
+                        <ProjectDetails title="Series and Movies" details="See the Series and Moview with the Review. It uses API to find the Movies and Series Data"
+                              code="https://github.com/brijesh2004/NextjsWebsite"
+                              live="https://nextjs-website-brijesh2004.vercel.app/"
+                        />
+                        <ProjectDetails title="Get Weather" details="Find the Weather with the City Name along with the Day and Date"
+                              code="https://github.com/brijesh2004/WeatherappBackend"
+                              live="https://weatherapp-new.onrender.com"
+                        />
+                        <ProjectDetails title="Techi Support" details="Educational Website the Find Project and Concept video and a Single platform "
+                              code="https://github.com/brijesh2004/Techisupport1"
+                              live="https://techi-support.onrender.com/"
+                        />
+                  </div>}
+
+                  {tech === 1 && 
+                  <div className='all_project'>
+                        <ProjectDetails title="Covid19 Live Report" details="See the Current live update about the Covid19 cases (Active case, Recovered Case, Deaths case , Total Active Cases"
+                              code="https://github.com/brijesh2004/Covid19Data"
+                              live="https://covid19-data12.netlify.app"
+                        />
+                        <ProjectDetails title="Todo List" details="Add Todo with Password without using any database and localhost, Delete Todo with the same password. Only using HTML CSS and JavaScript"
+                              code="https://github.com/brijesh2004/TodoList"
+                              live="https://brijesh2004.github.io/TodoList/"
+                        />
+                        <ProjectDetails title="Read jokes" details="This is the Jokes App you can read Unlimited number of the Jokes This is made using HTML CSS And JAVASCRIPT and it use the API to fetch the data from the api"
+                              code="https://github.com/brijesh2004/jokes"
+                              live="https://brijesh2004.github.io/jokes/"
+                        />
+                        <ProjectDetails title="Search Images Online" details="In this website you can search the online images with the category this is made using html css and javascript and the images search it from the unslaph"
+                              code="https://github.com/brijesh2004/SearchImage"
+                              live="https://brijesh2004.github.io/SearchImage"
+                        />
+                        <ProjectDetails title="Github Search Users" details="Search the users on the github by there starting username and views there profile and repo and many more"
+                              code="https://github.com/brijesh2004/Search_github_user"
+                              live="https://search-github-username1.netlify.app"
+                        />
+                        <ProjectDetails title="Music App" details="This is the Simple Music App Made using the HTML CSS And JAVASCRIPT with the limited of the song"
+                              code="https://github.com/brijesh2004/MusicApp"
+                              live="https://brijesh2004.github.io/MusicApp"
+                        />
+                  </div>}
+
+                  {tech === 2 && 
+                  <div className='all_project'>
+                       <h1 style={{color:'white'}}>Comming Soon</h1> 
+                  </div>}
+
+                  {tech === 3&& 
+                  <div className='all_project'>
+                       <h1 style={{color:'white'}}>Comming Soon</h1> 
+                  </div>}
+
+                 
             </>
+      )
+}
+
+
+const ProjectDetails = ({ title, details, code, live }) => {
+      return (
+            <div className='project_details'>
+                  <div>
+                        <h3>{title}</h3>
+                        <p className='details'>{details}</p>
+                        <hr /> <br />
+                        <div className='live_btn'>
+                              <button><Link to={code} target='_blank'>Code</Link></button>
+                              <button><Link to={live} target='_blank'>Live</Link></button>
+                        </div>
+                  </div>
+            </div>
       )
 }
 

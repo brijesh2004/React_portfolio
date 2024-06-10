@@ -4,6 +4,11 @@ import Typed from 'react-typed';
 // import hero from '../images/hero.jpg';
 import hero1 from '../images/hero3.jpeg';
 import Skills from './Skills';
+import Education from './Education';
+import Project from './Project';
+import CodingProfile from './CodingProfile';
+import ContactForm from './ContactForm';
+import Contact from './Contact';
 
 
 const About = () => {
@@ -13,7 +18,8 @@ const About = () => {
   return (
     <>
       <div className='page_start page_start_about container'>
-      <h1 className='about_me'>About Me</h1>
+      <br /><br /><br /><br />
+      <h1 className='about_me' id="about">About Me</h1>
 
       <div className='about_main'>
        <div className='image_part_div'>
@@ -41,8 +47,19 @@ const About = () => {
         </div>
         </div>
       </div>
-      <h1 className='about_me'>Skills</h1>
+      <h1 className='about_me' id="skill">Skills</h1>
       <Skills/>
+      <h1 className='about_me' style={{marginTop:'90px'}} id="education">Education</h1> 
+      <Education/>
+      <h1 className='about_me' style={{marginTop:'90px'}} id="project">Project</h1> 
+      <Project/>
+      <h1 className='about_me' style={{marginTop:'90px'}} id='coding_profile'>Coding Profile</h1>
+      <CodingProfile/>
+      <h1 className='about_me' style={{marginTop:'90px', marginBottom:'50px'}} id="contact">Contact me</h1>
+      <ContactForm/>
+      <h1 className='about_me' style={{marginTop:'90px', marginBottom:'50px'}}>Connect</h1>
+      <Contact/>
+      <p  style={{color:'white' ,marginTop:'90px', marginBottom:'50px', textAlign:'center'}}>All Right Reserved</p>
     </>
   )
 }

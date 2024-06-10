@@ -1,59 +1,60 @@
-import React ,{useEffect} from 'react';
-import highschool from '../images/highschool.png';
-import mmmut from '../images/mmmut.png';
-import Arrow from '../images/down_arrow.png'
-import Frad from './Frad';
-
+import React ,{useEffect , useState} from 'react';
+import './ski.css'
+import highSchool from '../images/highschool.png';
+import graduation from '../images/mmmut.png'
 const Education = () => {
+  const [education , setEducation] = useState(0);
   useEffect(()=>{
     document.title ="Brijes Singh (Education)";
   },[])
   return (
-    <>
-    <div className='page_start container '>
-    <h1 className='about_me'>Education</h1>
-      <Frad>
-      <div className='eduaction_details'>
-          <div><p className='degree_name'>High School</p> 
-          <p>From Aadarsh Inter College Hardi Chack Gorakhpur</p>
-          <p>With An Average Percentage of 83.3%</p>
-           </div>
-          <img src={highschool} alt="" />
-         </div>
-      </Frad>
-        <Frad>
-         <div className='arrow_div'>
-          <img src={Arrow} alt="" srcset="" className='arrow_img' />
-         </div>
-        </Frad>
-        <Frad>
+    <div className='skill_main_page'>
+      <div className='skill_page'>
+      
+     <div onClick={()=>setEducation(0)} className={education===0?'selected':''}>High School</div>
+     <div onClick={()=>setEducation(1)} className={education===1?'selected':''}>Intermediate</div>
+     <div onClick={()=>setEducation(2)} className={education===2?'selected':''}>Graduation</div>
+    </div>
 
-         <div className='eduaction_details'>
-          <img src={highschool} alt="" />
-          <div><p className='degree_name'>Intermediate School</p> 
-          <p>From Gov. Jubilee Inter College Gorakhpur</p>
-          <p>With An Average Percentage of 68.6%</p></div>
-         </div>
-        </Frad>
-
-        <Frad>
-         <div className='arrow_div'>
-          <img src={Arrow} alt="" srcset="" className='arrow_img' />
-         </div>
-        </Frad>
-
-        <Frad>
-
-         <div className='eduaction_details'>
-          <div> <p className='degree_name'>Graduation</p> 
-          <p>From Madan Mohan Malaviya University of Technology Gorakhpur</p>
-          </div>
-          <img src={mmmut} alt="" />
-         </div>
-        </Frad>
-      </div>
-    </>
+    {
+      education===0&&<From title="High School" college="From Aadarsh Inter College Hardi Chack Gorakhpur" 
+        per="With An Average Percentage of 83.3%" img={highSchool}
+      />
+    }
+    {
+      education===1&&<From title="Intermediate" college="From Gov. Jubilee Inter College Gorakhpur"
+        per="With An Average Percentage of 68.6%" img={highSchool}
+      />
+    }
+    {
+      education===2&&<From title="Graduation" college="From Madan Mohan Malaviya University of Technology Gorakhpur"
+        img={graduation}
+      />
+    }
+    </div>
   )
 }
+
+
+
+const From = ({title , college , per , img})=>{
+  return(
+    <div>
+     <div className='eduaction_details'>
+          <div><p className='degree_name'>{title}</p> 
+          <p>{college}</p>
+          <p>{per}</p>
+           </div>
+          <img src={img} alt="" />
+         </div>
+    </div>
+  )
+}
+
+
+
+
+
+
 
 export default Education

@@ -28,15 +28,15 @@ const Navbar = () => {
       <nav className='nav_bar_nav'>
         <div>
           <ul className={ulClass}>
-            <li> <a href="/" className='nav_a'>Home</a></li>
-            <li><a href="/education" className='nav_a'>Education</a></li>
-            <li><a href="/project" className='nav_a'>Project</a></li>
-            <li><a href="/contact" className='nav_a'>Contact</a></li>
+            <li> <a href="#about" className='nav_a'>Home</a></li>
+            <li><a href="#education" className='nav_a'>Education</a></li>
+            <li><a href="#project" className='nav_a'>Project</a></li>
+            <li><a href="#contact" className='nav_a'>Contact</a></li>
           </ul>
         </div>
         <div className='nav_toggle'>
          
-          <button class="toggle_btn" onClick={toggle} className="icon"><i class="fa fa-bars"></i></button>
+          <button className="toggle_btn icon" onClick={toggle}><i className="fa fa-bars"></i></button>
         </div>
       </nav>
     </div>

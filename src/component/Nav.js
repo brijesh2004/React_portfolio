@@ -1,19 +1,19 @@
-import React, { useState } from 'react'
-import '../style/Nav.css';
-import { Link } from 'react-router-dom';
-import home from '../images/home.png';
-import education from '../images/education-icon.png';
-import project from "../images/Project-Icon.png";
-import contact from '../images/contact.png'
+import React  from 'react'
+// import '../style/Nav.css';
+// import { Link } from 'react-router-dom';
+// import home from '../images/home.png';
+// import education from '../images/education-icon.png';
+// import project from "../images/Project-Icon.png";
+// import contact from '../images/contact.png'
 const Nav = () => {
-  const [set , setSet] = useState(false);
+  // const [set , setSet] = useState(false);
 
-  const toggleNav=()=>{
-     setSet(!set);
-  }
+  // const toggleNav=()=>{
+  //    setSet(!set);
+  // }
   return (
     <>
-    <h1 className={`toggle ${set ? 'toggle_up' : 'toggle_down'}`} onClick={toggleNav}>{set?<i className="fa fa-arrow-circle-up" style={{fontSize:'48px' ,color:'rgb(0, 255, 0)'}}></i>:<i className="fa fa-arrow-circle-down" style={{fontSize:'48px' ,color:'rgb(0, 255, 0)'}}></i>}</h1>
+    {/* <h1 className={`toggle ${set ? 'toggle_up' : 'toggle_down'}`} onClick={toggleNav}>{set?<i className="fa fa-arrow-circle-up" style={{fontSize:'48px' ,color:'rgb(0, 255, 0)'}}></i>:<i className="fa fa-arrow-circle-down" style={{fontSize:'48px' ,color:'rgb(0, 255, 0)'}}></i>}</h1>
     <div className={`bottom_nav ${set ? 'nav_up' : 'nav_down'}`} >
       <div>
 
@@ -27,7 +27,7 @@ const Nav = () => {
             <li title="Contact"><Link to="contact"><img className='nav_icon' src={contact} alt="Home" /></Link> </li>
         </ul>
       </div>
-    </div>
+    </div> */}
     </>
   )
 }

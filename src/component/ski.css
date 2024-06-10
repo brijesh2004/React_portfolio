@@ -1,50 +1,162 @@
-/* ski.css */
-.skills_page_Start {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .pskill {
-    width: 300px;
-  }
-  
-  .page_start_skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .left-skills,
-  .right-skills {
-    display: flex;
-    /* flex-direction: column;  */
-    align-items: center; /* Align items at the center */
-  }
-  
-  .vertical_line {
-    width: 7px;
-    background-color: white;
-    height: 150px;
-  }
-  .horizontal_line{
-    width: 150px;
-    background-color: white;
-    height: 10px;
-  }
-  
-  .left-skills {
-    text-align: right;
-  }
-  
-  .right-skills {
-    text-align: left;
-  }
-  
-  .skillcircle{
-    margin-left: 50px;
-  }
+.skill_main_page {
+  color: white;
+}
 
-  .skillimg{
-    width: 100px;
+
+.skill_page {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.skill_page div {
+  border: 2px solid rgb(26, 255, 0);
+  margin: 20px;
+  padding: 10px;
+  width: fit-content;
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill_page div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: greenyellow;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.selected {
+  background: greenyellow;
+  color: black;
+}
+
+.skill_page div:hover::before {
+  transform: translateX(0);
+}
+
+.skill_page div:hover {
+  color: black;
+}
+
+/* web skills */
+
+.web_skills {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid green;
+  border-radius: 10px;
+  /* background: rgb(71, 155, 50); */
+}
+
+@media (max-width: 800px) {
+  .web_skills {
+    margin-left: 5px;
+    margin-right: 5px;
   }
+}
+
+.web_skills div{
+  margin: 25px;
+  padding: 10px;
+  border: 1px solid rgb(26, 255, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden; 
+  z-index: 2;
+}
+
+.web_skills div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: greenyellow;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1; /* Ensure this is behind the text */
+}
+
+.web_skills div:hover::before {
+  transform: translateX(0);
+}
+
+
+
+
+ /* Project */
+
+ .project_details{
+   width: 350px;
+   color: white;
+   text-align: center;
+   /* border: 1px solid greenyellow; */
+   min-height: 200px;
+   border-radius: 20px;
+   box-shadow: 0 0 10px greenyellow;
+ }
+ .project_details:hover{
+  background: greenyellow;
+  color: black;
+  
+ }
+
+ .project_details a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+ }
+ .project_details button{
+   border: 1px solid green;
+   padding: 10px;
+   text-decoration: none;
+   color: black;
+   cursor: pointer;
+   background: rgb(117, 236, 119);
+   width: 120px;
+   border-radius: 20px;
+ }
+ .project_details .details{
+  margin-left: 20px;
+  margin-right:20px ;
+  transition: 0.2s ease-out;
+ }
+  
+
+ .live_btn{
+   display: flex;
+   justify-content: space-around;
+   text-decoration: none;
+   margin-bottom: 15px;
+ }
+
+
+ .all_project{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+ .all_project div{
+  margin: 20px;
+ }
+
+
+
+ .contact_main_page{
+  text-align: center;
+ }
