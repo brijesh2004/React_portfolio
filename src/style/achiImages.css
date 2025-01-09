@@ -5,4 +5,10 @@
 }
 .achi_images img{
     margin: 10px;
+    width: 500px;
+}
+@media (max-width:550px) {
+     .achi_images img{
+        width: 300px;
+     }
 }

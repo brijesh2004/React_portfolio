@@ -10,7 +10,7 @@ export default function Achievment() {
     <>
       <div className='achi_images'>
         {itemData.map((elem , index)=>(
-          <img src={`${elem.img}`} alt='images_' width={500}/>
+          <img src={`${elem.img}`} alt='images_'/>
         ))}
       </div>
     </>
