@@ -171,10 +171,9 @@ body {
   
   background-size: cover;
   background-position: center;
-  backdrop-filter: blur(17.9px);
+  /* backdrop-filter: blur(17.9px); */
   margin-bottom: 30px;
-  -webkit-backdrop-filter: blur(17.9px);
-
+  /* -webkit-backdrop-filter: blur(17.9px); */
 }
 
 
@@ -427,7 +426,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  z-index: 5;
+  z-index: 0.9;
   pointer-events: none;
   display: flex;
   text-align: center;

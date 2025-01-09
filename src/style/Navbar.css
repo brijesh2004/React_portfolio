@@ -8,7 +8,6 @@
    top: 0;
     z-index: 1;
     width: 100%;
-    overflow: hidden;
 }
 
 .nav_head1{
@@ -23,7 +22,6 @@
     z-index: 1;
     width: 100%;
     box-shadow: 5px 1px 10px 5px white;
-    overflow: hidden;
 }
 .nav_bar_nav{
     display: flex;

@@ -30,7 +30,6 @@ function App() {
   return (
 <>
 <div className='parent_page' id="about" onScroll={handleScroll}  onMouseMove={MouseMove}>
-   {/* <h1>Hello Brijesh Singh</h1> */}
      <Navbar isTop={isTop}/>
      <div id='circle' ref={circleRef}></div>
      <About/>
