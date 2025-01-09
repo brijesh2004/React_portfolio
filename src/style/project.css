@@ -1,4 +1,4 @@
-.see_code_btn{
+/* .see_code_btn{
     width: 90px;
     height: 40px;
     margin: 10px;
@@ -8,18 +8,17 @@
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
-}
-.see_live_btn{
+} */
+/* .see_live_btn{
     width: 90px;
     height: 40px;
     margin: 10px;
     background: rgb(38, 255, 0);
     border: greenyellow;
     border-radius: 10px;
-    /* color: white; */
     font-size: 20px;
     cursor: pointer;
-}
+} */
 
 .tech_btn{
     min-width: 80px;

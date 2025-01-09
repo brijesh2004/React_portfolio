@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './ski.css';
+import {Button , TextField} from '@mui/material';
+import { TextareaAutosize } from '@mui/base/TextareaAutosize';
+
 
 const ContactForm = () => {
     const [name, setName] = useState("");
@@ -9,6 +12,10 @@ const ContactForm = () => {
   
     const storeTheMessage = async (e) => {
       e.preventDefault();
+      if(!name||!email||!message){
+        alert("all fields are required");
+        return;
+      }
       setSubmit("Submiting...");
       const res = await fetch('https://portfoliobackend-59j6.onrender.com/addmessage', {
         method: 'POST',
@@ -47,13 +54,12 @@ const ContactForm = () => {
   return (
     <div className='contact_main_page'>
      <form className='contact_form'>
-          <label htmlFor="name">Name:</label><br />
-          <input type="text" placeholder='Name' className='inp' name='name' onChange={handleInputs} value={name} autoComplete='off' required /> <br />
-           <label htmlFor="email">Email:</label><br />
-          <input type="email" placeholder='Email' className='inp' name='email' onChange={handleInputs} value={email} autoComplete='off' required /> <br />
-          <label htmlFor="message">Message:</label><br />
-          <textarea name="message" id="" cols="30" rows="10" placeholder='message' onChange={handleInputs} value={message} autoComplete='off' required></textarea> <br />
-          <input type="button" value={submit} className='submit_btn' onClick={storeTheMessage} />
+          <TextField style={{backgroundColor:'gray' , width:'300px'}} name='name' onChange={handleInputs} value={name} id="outlined-basic" label="Name" variant="outlined" color='secondary'/> <br /><br />
+          <TextField style={{backgroundColor:'gray' , width:'300px'}} name='email' onChange={handleInputs} value={email} id="outlined-basic" label="Email" variant="outlined" color='secondary'/>
+          <br /><br />
+          <TextareaAutosize style={{backgroundColor:'gray' , width:'300px'}} name='message' aria-label="minimum height" minRows={3} placeholder="message" onChange={handleInputs} value={message}/>
+          <br />
+          <Button variant="contained" onClick={storeTheMessage} >{submit}</Button>
         </form>
         <br /><br /><br /><br /><br />
       

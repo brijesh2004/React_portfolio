@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import '../style/Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({isTop}) => {
   const [ulClass, setUlClass] = useState("nav_ul");
    
   const toggle = () => {
     setUlClass(ulClass === "nav_ul" ? "nav_ul_clicked" : "nav_ul");
   };
+
+
+  
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,7 +28,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className='nav_head'>
+    <div className={isTop?"nav_head":"nav_head1"}>
       <nav className='nav_bar_nav'>
         <div>
           <ul className={ulClass}>

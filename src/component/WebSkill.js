@@ -16,6 +16,7 @@ const WebSkill = () => {
         <div>Django</div>
         <div>MongoDB</div>
         <div>MySql</div>
+        <div>React Native</div>
        </div>
     </div>
   )

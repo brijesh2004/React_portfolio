@@ -1,0 +1,8 @@
+.achi_images{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.achi_images img{
+    margin: 10px;
+}

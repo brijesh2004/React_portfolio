@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from '@mui/material';
 
 
 
@@ -8,7 +9,7 @@ const Coding=({platform , img , profile})=>{
         <>
            <div className='coding_profile_box'>
             <h2 style={{color:'white'}}>{platform}</h2>
-            <Link to={profile} target='_blank'><button className='coding_profile_button'>Visit</button></Link>
+            <Link to={profile} target='_blank'><Button variant='contained'>Visit</Button></Link>
           </div> 
         </>
     )

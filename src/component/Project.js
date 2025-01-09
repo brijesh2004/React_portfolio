@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import '../../src/App.css';
 import './ski.css';
 import { Link } from 'react-router-dom';
+import playSound from '../clicked/PlaySound';
+import { Button } from '@mui/material';
 
 
 
@@ -14,10 +16,11 @@ const Project = () => {
       return (
             <>
                   <div className='skill_page'>
-                        <div onClick={() => setTech(0)} className={tech === 0 ? 'selected' : ''}>Full Stack</div>
-                        <div onClick={() => setTech(1)} className={tech === 1 ? 'selected' : ''}>Frontend</div>
-                        <div onClick={() => setTech(2)} className={tech === 2 ? 'selected' : ''}>Blockchain</div>
-                        <div onClick={() => setTech(3)} className={tech === 3 ? 'selected' : ''}>Machine Learning</div>
+                        <div onClick={() => setTech(0)} className={tech === 0 ? 'selected' : ''} onMouseLeave={playSound}>Full Stack</div>
+                        <div onClick={() => setTech(1)} className={tech === 1 ? 'selected' : ''} onMouseLeave={playSound}>Frontend</div>
+                        <div onClick={() => setTech(4)} className={tech === 4 ? 'selected' : ''} onMouseLeave={playSound}>Android</div>
+                        <div onClick={() => setTech(2)} className={tech === 2 ? 'selected' : ''} onMouseLeave={playSound}>Blockchain</div>
+                        <div onClick={() => setTech(3)} className={tech === 3 ? 'selected' : ''} onMouseLeave={playSound}>Machine Learning</div>
                   </div>
 
                   {tech === 0 &&
@@ -96,6 +99,17 @@ const Project = () => {
                                     live="https://smsdetector.streamlit.app/"
                               />
                         </div>}
+                  {tech === 4 &&
+                        <div className='all_project'>
+                              <ProjectDetails title="RestoApp" details="Order the food withing the Reaustorent home delivery unavailable Created Using the React Native"
+                                    code="https://github.com/brijesh2004/RestoMobileApp"
+                                    live="https://github.com/brijesh2004/RestoMobileApp"
+                              />
+                              <ProjectDetails title="Github Repo App" details="Search the Github Repo with Repo Name add it to favorite remove from favorite see all favorite repo. Created Using the React Native"
+                                    code="https://github.com/brijesh2004/GithubRepoSearch"
+                                    live="https://github.com/brijesh2004/GithubRepoSearch"
+                              />
+                        </div>}
 
 
             </>
@@ -111,8 +125,8 @@ const ProjectDetails = ({ title, details, code, live }) => {
                         <p className='details'>{details}</p>
                         <hr /> <br />
                         <div className='live_btn'>
-                              <button><Link to={code} target='_blank'>Code</Link></button>
-                              <button><Link to={live} target='_blank'>Live</Link></button>
+                              <Button variant='contained'><Link to={code} target='_blank'>Code</Link></Button>
+                              <Button variant='contained'><Link to={live} target='_blank'>Live</Link></Button>
                         </div>
                   </div>
             </div>

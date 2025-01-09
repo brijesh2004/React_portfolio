@@ -118,16 +118,14 @@
 
  .project_details a{
   text-decoration: none;
-  color: black;
-  font-size: 20px;
+  color: white;
+  /* font-size: 20px; */
  }
  .project_details button{
-   border: 1px solid green;
    padding: 10px;
    text-decoration: none;
-   color: black;
+   color: white;
    cursor: pointer;
-   background: rgb(117, 236, 119);
    width: 120px;
    border-radius: 20px;
  }
